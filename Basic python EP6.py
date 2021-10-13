@@ -24,16 +24,16 @@ helpmenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label = 'Help',menu=helpmenu)
 helpmenu.add_command(label = 'About',command= About)
 
+def Donate():
+    messagebox.showinfo('Donate','อยากได้ etherium จังเลยช่วยบริจาคหน่อยได้มั้ย')
 
 #Donate
 donatemenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label = 'Donate',menu=donatemenu)
-donatemenu.add_command(label = 'Dollar')
-donatemenu.add_command(label = 'Baht')
-donatemenu.add_command(label = 'Yen')
-donatemenu.add_command(label = 'Bitcoin')
+donatemenu.add_command(label = 'Please Donate',command = Donate)
 
 #################################################
+
 icon_t1=PhotoImage(file='T1.expense.png')
 icon_t2=PhotoImage(file='T2.expense.png')
 
